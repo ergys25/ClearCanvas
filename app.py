@@ -1,10 +1,11 @@
-from flask import Flask, render_template, request, send_file, abort
-from werkzeug.utils import secure_filename
-from rembg import remove
-from PIL import Image
-from io import BytesIO
 import logging
 import os
+from io import BytesIO
+
+from PIL import Image
+from flask import Flask, render_template, request, send_file, abort
+from rembg import remove
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)

@@ -1,191 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>✂ClearCanvas</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap">
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✂ClearCanvas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap">
+    <style>
 
-            @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
-/* Some styling */
-body {
-    font-family: "Roboto", sans-serif;
-}
+        /* Some styling */
+        body {
+            font-family: "Roboto", sans-serif;
+        }
 
-h1 {
-    font-size: 4rem;
-}
+        h1 {
+            font-size: 4rem;
+        }
 
-.bounce{
+        .bounce {
 
-    animation-name: bounce;
-}
+            animation-name: bounce;
+        }
 
-.bouncing-letters span {
-    animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    display: inline-block;
-}
+        .bouncing-letters span {
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            display: inline-block;
+        }
 
-@keyframes bounce {
-    20%,
-    50%,
-    80%,
-    to {
-        transform: scale(1, 1);
-    }
-    40% {
-        transform: scale(1.75, 0.65);
-    }
-    45% {
-        transform: scale(1.75, 0.65);
-    }
-    70% {
-        transform: scale(1.25, 0.75);
-    }
-    90% {
-        transform: scale(1.15, 0.85);
-    }
-}
+        @keyframes bounce {
+            20%,
+            50%,
+            80%,
+            to {
+                transform: scale(1, 1);
+            }
+            40% {
+                transform: scale(1.75, 0.65);
+            }
+            45% {
+                transform: scale(1.75, 0.65);
+            }
+            70% {
+                transform: scale(1.25, 0.75);
+            }
+            90% {
+                transform: scale(1.15, 0.85);
+            }
+        }
 
-    body {
-      height: 100vh;
-      display: flex;
-        background: #1a1a1a; /* Darker background */
-      align-items: center;
-      justify-content: center;
-      font-family: 'Madimi One', sans-serif;
-        font-size: larger;
-      margin: 0;
-      overflow: hidden;
-    }
+        body {
+            height: 100vh;
+            display: flex;
+            background: #1a1a1a; /* Darker background */
+            align-items: center;
+            justify-content: center;
+            font-family: 'Madimi One', sans-serif;
+            font-size: larger;
+            margin: 0;
+            overflow: hidden;
+        }
 
-    .drop-zone {
-      padding: 20px;
-      width: 80vw;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-      transition: all 0.3s ease;
-        border: 2px solid transparent; /* Transparent border */
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    animation: pulsate 3s infinite alternate; /* Pulsating effect */
-    }
+        .drop-zone {
+            padding: 20px;
+            width: 80vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            transition: all 0.3s ease;
+            border: 2px solid transparent; /* Transparent border */
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            animation: pulsate 3s infinite alternate; /* Pulsating effect */
+        }
 
-@keyframes pulsate {
-    0% {
-        box-shadow: 0 0 20px rgba(243, 156, 18, 0.4);
-    }
-    100% {
-        box-shadow: 0 0 40px rgba(243, 156, 18, 0.6), 0 0 60px rgba(243, 156, 18, 0.8);
-    }
-}
+        @keyframes pulsate {
+            0% {
+                box-shadow: 0 0 20px rgba(243, 156, 18, 0.4);
+            }
+            100% {
+                box-shadow: 0 0 40px rgba(243, 156, 18, 0.6), 0 0 60px rgba(243, 156, 18, 0.8);
+            }
+        }
 
-    .drop-zone.dragover {
-      background-color: #34495e; /* Darker background on dragover */
-    }
+        .drop-zone.dragover {
+            background-color: #34495e; /* Darker background on dragover */
+        }
 
-    h1 {
-      font-size: 4em;
-      color: #f39c12; /* Yellow text color */
-      margin-bottom: 20px;
-      animation: fadeIn 1s ease-in-out; /* Fade-in animation */
-    }
+        h1 {
+            font-size: 4em;
+            color: #f39c12; /* Yellow text color */
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+        }
 
-    input[type="file"] {
-      display: none;
-    }
+        input[type="file"] {
+            display: none;
+        }
 
-    input[type="submit"] {
-      padding: 10px 20px;
-      background-color: #f39c12; /* Yellow button color */
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #f39c12; /* Yellow button color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-    input[type="submit"]:hover {
-      background-color: #e67e22; /* Darker yellow on hover */
-    }
-  </style>
+        input[type="submit"]:hover {
+            background-color: #e67e22; /* Darker yellow on hover */
+        }
+    </style>
 </head>
 <body>
-  <div id="dropZone" class="drop-zone">
+<div id="dropZone" class="drop-zone">
 
 
-        <h1 class="bouncing-letters">
-            <span>R</span><span>e</span><span>m</span><span>o</span><span>v</span><span>e</span>
-            <span>B</span><span>a</span><span>c</span><span>k</span><span>g</span><span>r</span><span>o</span><span>u</span><span>n</span><span>d</span>
-            <span>D</span><span>r</span><span>o</span><span>p</span>
-            <span>Z</span><span>o</span><span>n</span><span>e</span><span>!</span>
-        </h1>
+    <h1 class="bouncing-letters">
+        <span>R</span><span>e</span><span>m</span><span>o</span><span>v</span><span>e</span>
+        <span>B</span><span>a</span><span>c</span><span>k</span><span>g</span><span>r</span><span>o</span><span>u</span><span>n</span><span>d</span>
+        <span>D</span><span>r</span><span>o</span><span>p</span>
+        <span>Z</span><span>o</span><span>n</span><span>e</span><span>!</span>
+    </h1>
 
     <form id="uploadForm" action="/" method="post" enctype="multipart/form-data">
-      <input id="fileInput" type="file" name="file" accept="image/*" />
+        <input id="fileInput" type="file" name="file" accept="image/*"/>
     </form>
-  </div>
+</div>
 
-  <script>
+<script>
 
-document.querySelectorAll(".bouncing-letters>span").forEach((element) => {
-    element.addEventListener("mouseover", (e) => bounce(e.target));
-});
+    document.querySelectorAll(".bouncing-letters>span").forEach((element) => {
+        element.addEventListener("mouseover", (e) => bounce(e.target));
+    });
 
-function bounce(letter) {
-    if (!letter.classList.contains("bounce")) {
-        letter.classList.add("bounce");
-        setTimeout(
-            function () {
-                letter.classList.remove("bounce");
-            },
-            1000
-        );
+    function bounce(letter) {
+        if (!letter.classList.contains("bounce")) {
+            letter.classList.add("bounce");
+            setTimeout(
+                function () {
+                    letter.classList.remove("bounce");
+                },
+                1000
+            );
+        }
     }
-}
 
     let dropZone = document.getElementById("dropZone");
     let fileInput = document.getElementById("fileInput");
     let uploadForm = document.getElementById("uploadForm");
 
     dropZone.addEventListener("click", function () {
-      fileInput.click();
+        fileInput.click();
     });
 
     fileInput.addEventListener("change", function () {
-      if (fileInput.files.length > 0) {
-        uploadForm.submit();
-      }
+        if (fileInput.files.length > 0) {
+            uploadForm.submit();
+        }
     });
 
     dropZone.addEventListener("dragover", function (e) {
-      this.classList.add("dragover");
+        this.classList.add("dragover");
     });
 
     dropZone.addEventListener("dragleave", function (e) {
-      this.classList.remove("dragover");
+        this.classList.remove("dragover");
     });
 
     dropZone.addEventListener("drop", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      this.classList.remove("dragover");
+        e.preventDefault();
+        e.stopPropagation();
+        this.classList.remove("dragover");
 
-      let file = e.dataTransfer.files[0];
-      fileInput.files = e.dataTransfer.files;
-      uploadForm.submit();
+        let file = e.dataTransfer.files[0];
+        fileInput.files = e.dataTransfer.files;
+        uploadForm.submit();
     });
-  </script>
+</script>
 </body>
 </html>
